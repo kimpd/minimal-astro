@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "About Mooner";
 
@@ -35,7 +35,7 @@ const skillColor = "orange";
   }
 </style>
 
-<Layout>
+<BaseLayout>
   <h1>{pageTitle}</h1>
   <h2>... and my new Astro site!</h2>
 
@@ -62,4 +62,4 @@ const skillColor = "orange";
 
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 
-</Layout>
+</BaseLayout>
